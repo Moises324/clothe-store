@@ -1,0 +1,81 @@
+body {
+  background-color: lightgray;
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  grid-area: navbar;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.asidebar {
+  grid-area: asidebar;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-right: 40px;
+  padding-left: 15px;
+}
+aside {
+  background-color: black;
+  color: white;
+}
+.section {
+  grid-area: section;
+  text-align: center;
+}
+section {
+  background-color: black;
+}
+.footer {
+  grid-area: footer;
+}
+footer {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "asidebar section"
+    "footer footer";
+  grid-template-columns: auto auto;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border-radius: 4px;
+}
+img {
+  width: 25em;
+  height: 31em;
+  object-fit: contain;
+  padding-top: 15px;
+}
+button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  background-color: rgb(17, 41, 172);
+  color: white;
+}
+button {
+  cursor: pointer;
+}
+button:active {
+  background-color: rgb(57, 57, 169);
+}
+button:hover {
+  background-color: black;
+}
